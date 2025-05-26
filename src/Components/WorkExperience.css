@@ -1,0 +1,44 @@
+/* body
+{
+    background-color: black;
+}
+.lowes
+{
+    height: 570px;
+    width: 1250px;
+    border: 5px solid purple;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 100px;
+    margin-bottom: 27px;
+   
+}
+@media (max-width : 700px) 
+{
+    .sf
+    {
+        display : none;
+    }
+}
+@media (max-width : 700px) 
+{
+    .images
+    {
+        position: relative;
+        top: 70px;
+        left: 40%;
+    }
+}
+@media (max-width : 700px) 
+{
+    .lowes
+    {
+        position: relative;
+        top: 100px;
+    }
+}
+span
+{
+    color: violet;
+} */
