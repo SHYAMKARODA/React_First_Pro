@@ -1,61 +1,95 @@
-// import React, {useState} from 'react';
-// import './Sidebar.css';
+// import React, { useState } from "react";
+// // import ReactDOM from "react-dom";
+// // import $ from "jquery";
 
-// const Sidebar = () => {
-//   const [toggled, setToggled] = useState(false);
-
-//   const handleToggle = (e) => {
-//     e.preventDefault();
-//     setToggled(!toggled);
-//   };
-
+// function Sidebar() {
+//     const[show, setShow] = useState(false)
+//     const btn=()=>{
+//         setShow()
+//     }
 //   return (
-//     <div className={`container ${toggled ? 'toggled' : ''}`} id="wrapper">
-//       <div className="row">
-//         <hr />
+//     <>
+//       <div id="wrapper">
+//         <div className="overlay"></div>
 
-//         {/* Sidebar */}
-//         <div id="sidebar-wrapper">
-//           <ul className="sidebar-nav" style={{ marginLeft: 0 }}>
-//             <li className="sidebar-brand">
-//               <a href="/menu-toggle" id="menu-toggle" onClick={handleToggle} style={{ marginTop: 20, float: 'right' }}>
-//                 <i className="fa fa-bars" style={{ fontSize: 20 }} aria-hidden="true"></i>
+//         {/* <Sidebar> */}
+//         <nav
+//           className="navbar navbar-inverse fixed-top"
+//           id="sidebar-wrapper"
+//           role="navigation"
+//         >
+//           <ul className="nav sidebar-nav">
+//             <div className="sidebar-header">
+//               <div className="sidebar-brand">
+//                 <a href="/">Brand</a>
+//               </div>
+//             </div>
+//             <li>
+//               <a href="#home">Home</a>
+//             </li>
+//             <li>
+//               <a href="#about">About</a>
+//             </li>
+//             <li>
+//               <a href="#events">Events</a>
+//             </li>
+//             <li>
+//               <a href="#team">Team</a>
+//             </li>
+//             <li className="dropdown">
+//               <a href="#works" className="dropdown-toggle" data-toggle="dropdown">
+//                 Works <span className="caret"></span>
 //               </a>
+//               {/* <ul className="dropdown-menu animated fadeInLeft" role="menu">
+//                 <div className="dropdown-header">Dropdown heading</div>
+//                 <li>
+//                   <a href="#pictures">Pictures</a>
+//                 </li>
+//                 <li>
+//                   <a href="#videos">Videeos</a>
+//                 </li>
+//                 <li>
+//                   <a href="#books">Books</a>
+//                 </li>
+//                 <li>
+//                   <a href="#art">Art</a>
+//                 </li>
+//                 <li>
+//                   <a href="#awards">Awards</a>
+//                 </li>
+//               </ul> */}
 //             </li>
 //             <li>
-//               <a href="/"><i className="fa fa-sort-alpha-asc" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
+//               <a href="#services">Services</a>
 //             </li>
 //             <li>
-//               <a href="/"><i className="fa fa-play-circle-o" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
+//               <a href="#contact">Contact</a>
 //             </li>
 //             <li>
-//               <a href="/"><i className="fa fa-puzzle-piece" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
-//             </li>
-//             <li>
-//               <a href="/"><i className="fa fa-font" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
-//             </li>
-//             <li>
-//               <a href="/"><i className="fa fa-info-circle" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
-//             </li>
-//             <li>
-//               <a href="/"><i className="fa fa-comment-o" aria-hidden="true"></i> <span style={{ marginLeft: 10 }}>Section</span></a>
+//               <a href="#followme">Follow me</a>
 //             </li>
 //           </ul>
-//         </div>
+//         </nav>
+//         {/* <sidebar-wrapper> */}
 
-//         {/* Page Content */}
+//         {/* <Page Content> */}
 //         <div id="page-content-wrapper">
-//           <div className="container-fluid">
+//           <button type="button" className="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas" onClick={btn}>
+//             <span className="hamb-top"></span>
+//             <span className="hamb-middle"></span>
+//             <span className="hamb-bottom"></span>
+//           </button>
+//           <div className="container">
 //             <div className="row">
-//               <div className="col-lg-12">
-//                 {/* Your page content goes here */}
-//               </div>
+//               <div className="col-lg-8 col-lg-offset-2"></div>
 //             </div>
 //           </div>
 //         </div>
+//         {/* <page-content-wrapper> */}
 //       </div>
-//     </div>
+//       {/* <wrapper> */}
+//     </>
 //   );
-// };
+// }
 
 // export default Sidebar;
